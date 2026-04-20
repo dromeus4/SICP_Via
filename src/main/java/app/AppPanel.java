@@ -12,8 +12,7 @@ public class AppPanel extends FwBarraPanel {
     public AppPanel() {
         // Por ahora solo un placeholder
         Label placeholder = new Label("Panel de herramientas");
-        placeholder.setTextFill(Color.rgb(80, 80, 80));
+        placeholder.setTextFill(Color.BLACK);
         agregarComponentes(placeholder);
     }
 }
-
