@@ -1,0 +1,176 @@
+/* Fuentes embebidas para apariencia consistente entre plataformas. */
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/Barlow-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Barlow Bold";
+    src: url("../fonts/Barlow-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Ericsson";
+    src: url("../fonts/Ericsson.ttf");
+}
+
+.root {
+    -fx-font-family: "Barlow", "SansSerif";
+}
+
+.btn-principal {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.btn-barra {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.titulo-cabecera {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.logo-cabecera {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.reloj-pie {
+    -fx-font-family: "Ericsson", "Monospaced";
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.info-pie {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* =====================================================
+   SCROLL PANES - ESTILOS UNIFICADOS
+   =====================================================
+   Scrollers siempre visibles, finos, transparentes
+   y que no se solapan entre sí.
+*/
+
+.franja-scroll,
+.contenido-scroll,
+.ventana-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.franja-scroll > .viewport,
+.contenido-scroll > .viewport,
+.ventana-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* =====================================================
+   SCROLLBARS FINOS Y SIEMPRE VISIBLES
+   =====================================================
+   Grosor: 6px para franjas, 8px para ventana principal
+*/
+
+/* Scrollbar base - muy fino */
+.franja-scroll .scroll-bar:vertical,
+.contenido-scroll .scroll-bar:vertical {
+    -fx-pref-width: 6;
+    -fx-min-width: 6;
+    -fx-max-width: 6;
+    -fx-background-color: rgba(200, 200, 200, 0.3);
+}
+
+.franja-scroll .scroll-bar:horizontal,
+.contenido-scroll .scroll-bar:horizontal {
+    -fx-pref-height: 6;
+    -fx-min-height: 6;
+    -fx-max-height: 6;
+    -fx-background-color: rgba(200, 200, 200, 0.3);
+}
+
+/* Ventana principal - un poco más grueso */
+.ventana-scroll .scroll-bar:vertical {
+    -fx-pref-width: 8;
+    -fx-min-width: 8;
+    -fx-max-width: 8;
+    -fx-background-color: rgba(100, 100, 100, 0.4);
+}
+
+.ventana-scroll .scroll-bar:horizontal {
+    -fx-pref-height: 8;
+    -fx-min-height: 8;
+    -fx-max-height: 8;
+    -fx-background-color: rgba(100, 100, 100, 0.4);
+}
+
+/* Thumb (el indicador que se arrastra) - fino */
+.franja-scroll .scroll-bar .thumb,
+.contenido-scroll .scroll-bar .thumb {
+    -fx-background-color: rgba(80, 80, 80, 0.6);
+    -fx-background-radius: 3;
+    -fx-background-insets: 1;
+}
+
+.ventana-scroll .scroll-bar .thumb {
+    -fx-background-color: rgba(60, 60, 60, 0.8);
+    -fx-background-radius: 4;
+    -fx-background-insets: 1;
+}
+
+/* Thumb hover - más visible */
+.franja-scroll .scroll-bar .thumb:hover,
+.contenido-scroll .scroll-bar .thumb:hover {
+    -fx-background-color: rgba(100, 100, 100, 0.8);
+}
+
+.ventana-scroll .scroll-bar .thumb:hover {
+    -fx-background-color: rgba(80, 80, 80, 1.0);
+}
+
+/* Track transparente */
+.franja-scroll .scroll-bar .track,
+.contenido-scroll .scroll-bar .track,
+.ventana-scroll .scroll-bar .track {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+
+/* Ocultar botones de incremento/decremento */
+.franja-scroll .scroll-bar .increment-button,
+.franja-scroll .scroll-bar .decrement-button,
+.contenido-scroll .scroll-bar .increment-button,
+.contenido-scroll .scroll-bar .decrement-button,
+.ventana-scroll .scroll-bar .increment-button,
+.ventana-scroll .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+
+.franja-scroll .scroll-bar .increment-arrow,
+.franja-scroll .scroll-bar .decrement-arrow,
+.contenido-scroll .scroll-bar .increment-arrow,
+.contenido-scroll .scroll-bar .decrement-arrow,
+.ventana-scroll .scroll-bar .increment-arrow,
+.ventana-scroll .scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+/* Esquina donde se cruzan scrollbars - transparente */
+.franja-scroll > .corner,
+.contenido-scroll > .corner,
+.ventana-scroll > .corner {
+    -fx-background-color: transparent;
+}

@@ -1,0 +1,25 @@
+# === Compilados y build ===
+target/
+out-test/
+
+# === IDE ===
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+*.code-workspace
+
+# === Maven ===
+.mvn/repository/
+
+# === OS ===
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# === Logs ===
+*.log
+hs_err_pid*
+
