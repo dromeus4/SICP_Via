@@ -42,11 +42,13 @@
     -fx-font-family: "Ericsson", "Monospaced";
     -fx-font-size: 28px;
     -fx-font-weight: bold;
+    -fx-text-fill: black;
 }
 
 .info-pie {
     -fx-font-size: 14px;
     -fx-font-weight: bold;
+    -fx-text-fill: black;
 }
 
 /* =====================================================
